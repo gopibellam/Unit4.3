@@ -1,0 +1,70 @@
+<html>
+  <div style="text-align-last: right; padding-right: 45%">
+    <h1>Add Employees Here</h1>
+
+    <label><b>Employee Name</b></label
+    >&nbsp;&nbsp;&nbsp;&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="name"
+      id="name"
+      #name
+    /><br />
+    <label><b>Date of Birth</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="dob"
+      id="dob"
+      #dob
+    /><br />
+    <label><b>Salary</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="number"
+      name="salary"
+      id="salary"
+      #salary
+    /><br />
+    <label><b>Joining Date</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="joining_date"
+      id="joining_date"
+      #joining_date
+    /><br />
+
+    <label><b>Status</b></label
+    >&nbsp;
+    <input
+      style="text-align-last: start"
+      type="text"
+      name="status"
+      id="status"
+      #status
+    /><br /><br />
+    <button
+      type="button"
+      style="margin-right: 6%"
+      (click)="
+        Add(
+          name.value,
+          dob.value,
+          salary.value,
+          joining_date.value,
+          status.value
+        )
+      "
+    >
+      Add
+    </button>
+    <button type="button" style="margin-right: 15px">
+      <a routerLink="/home" style="text-decoration: none; color: black">Back</a>
+    </button>
+  </div>
+</html>
